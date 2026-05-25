@@ -10,8 +10,6 @@
   background-size: cover;
   background-position: center;
 
-  filter: blur(6px);
-
   z-index: -1;
 
   transform: scale(1.1);
