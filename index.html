@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html>
 
@@ -9,8 +10,7 @@
 </head>
 
 <body>
-    <script src = "script.js"></script>
-    
+
     <div class = "background"></div>
 
     <div class = "heading">
@@ -18,24 +18,39 @@
     </div>
 
     <div class = "mainButton">
-     <button>Add a Book to library </button>
-    </div>
-
-    <div class = "form container" >
-        <input id = "title"> 
-        <input id = "authorName">
-        <input id = "category">
-        <input id = "description">
-
-        <button id = "statusBtn">Not read </button> 
-        <button id = "Add"> Add </button>
-        <button id = "Delete"> delete </button>
-       
-              
-    </div>
+     <button id = "openFormBtn">
+      
+        <span class = "plus">+</span>
+        <span class = "text">Add a Book to library </span>
     
+    </button>
+
+    </div>
+
+       <div class = "formContainer" >
+             <div> Title  <input id = "title"></div>  
+             <div> authorName : <input id = "authorName">  </div>
+             <div> category :   <input id = "category"> </div>
+             <div> description :<input id = "description"> </div>
+
+             <div>
+                status :
+
+                <select id = "status">
+                    <option value = "Read ✅"> Read ✅</option>
+                    <option value = "Not Read yet 😔"> Not Read yet 😔</option>
+                </select>
+             </div>
+
+        <button id = "Add"> Add </button>
+        <button id = "Back"> Cancel </button>          
+    </div>
+
+    <div id = "BookContainer"></div>
+
     
 </body>
 
-</html>
+  <script src="script.js"></script>
 
+</html>
